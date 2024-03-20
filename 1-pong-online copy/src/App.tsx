@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
 import './App.css'
+import CSS from 'csstype';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [pos, setPos] = useState([0, 0]);
+  
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  const paddleStyle: CSS.Properties = {
+    backgroundColor: '#0F0F0F',
+    height: '28px',
+    width: '300px',
+    border: '5px solid #f0f0f0'
+  }
+
+  return <div style={paddleStyle}></div>
 }
 
 export default App
