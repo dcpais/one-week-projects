@@ -21,6 +21,11 @@ const io = new Server(server, {
 
 io.on("connection", (socket) => {
     console.log("Connected: " + socket.id)
+
+    socket.on("send_message", (data) => {
+        console.log("message received");
+        socket.broadcast.emit("receive_message", data);
+    })
 });
 
 server.listen(3001, () => {
