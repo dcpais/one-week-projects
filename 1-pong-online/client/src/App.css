@@ -1,0 +1,17 @@
+.paddle {
+    background-color: black;
+    width: 50px;
+    height: 300px;
+    left: 100px;
+    position: relative
+}
+
+.ball {
+    background-color: #333333;
+    width: 20px;
+    height: 20px;
+}
+
+.game {
+    background-color: white;
+}
