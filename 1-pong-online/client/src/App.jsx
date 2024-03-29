@@ -24,7 +24,7 @@ function App() {
   const updateGameState = (state) => {
     document.getElementById("p1").style.left = `${state.paddlePos}px`;
     document.getElementById("p2").style.left = `${state.enemyPaddlePos}px`;
-    document.getElementById("ball").style.left = `${state.ballPos* 5}px`;
+    document.getElementById("ball").style.transform = `translateX(${state.ballPos * 100}px)`;
     console.log(document.getElementById("ball").style.left)
   }
 
