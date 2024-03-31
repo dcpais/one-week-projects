@@ -22,6 +22,7 @@ function App() {
   }
 
   const updateGameState = (state) => {
+    // Replace these with class oriented things?
     document.getElementById("p1").style.left = `${state.paddlePos}px`;
     document.getElementById("p2").style.left = `${state.enemyPaddlePos}px`;
     document.getElementById("ball").style.transform = `translateX(${state.ballPos * 100}px)`;
