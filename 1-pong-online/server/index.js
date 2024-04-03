@@ -32,7 +32,7 @@ let p2Pos = 0;
 let ballPos = 0;
 
 /**
- * Instruction set to receive from connections
+ * Instruction set to receive from connectionss
  */
 io.on("connection", (socket) => {
     console.log("Connected: " + socket.id)
